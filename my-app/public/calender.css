@@ -1,7 +1,13 @@
-.container-cal {
+body{
+  background-color: rgb(235, 231, 231);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.CC {
     width      : 50%;
-    margin-top : 2%;
+    margin-top : 8%;
     margin-left: 1%;
+    height: auto;
   
   }
   
@@ -14,7 +20,6 @@
   
   .chooseTime h2 {
     width      : 100%;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-align : left;
   }
@@ -23,24 +28,32 @@
     margin-right: 2%;
   }
   
-  .showDate {
+  .A {
     width      : 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    border     : .5px solid #E0E0E0;
+    border     : .5px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-left: 40%;
   
   }
+  .rbd{
+    height: 15px;
+  }
+
+
   
-  #showDate {
+  #A {
     display: flex;
     gap    : 30%;
     padding: .5%;
+    /* border: 2px solid green; */
   }
   
   #leftBoxcal {
     font-size  : 12px;
     font-weight: 400;
     text-align : left;
+    
   
     margin-left: 3%;
   }
@@ -59,16 +72,25 @@
     margin-right: 0%;
   }
   
-  .calenderContainer {
+  .C {
     display    : flex;
     width      : 100%;
     margin-left: 40%;
+
+    /* border: 2px solid green; */
+    /* height: 45px; */
+  }
+  .C:hover {
+    transform: scale(1.1);
+    height: 25px;
+    /* border: 2px solid green; */
+    /* height: 45px; */
   }
   
   .showCalender {
     width      : 50%;
     margin-left: 0%;
-    height     : 40%;
+    height     : 60%;
     border     : none;
   }
   
@@ -83,6 +105,7 @@
   .pickTime {
     width      : 100%;
     margin-left: 40%;
+    text-align: center;
   }
   
   .slidecontainer {

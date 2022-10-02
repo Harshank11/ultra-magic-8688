@@ -6,7 +6,7 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
     {
         title: 'Login or Signup',
-        path: '/',
+        path: '/login',
         icon: <IoIcons.IoMdPeople />,
         cName: 'nav-text'
       },
