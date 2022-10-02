@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './Sidebar';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+// import Login from '../Pages/Login';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -15,26 +16,26 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
-          <Link to='#' className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
-        <div id='logo'>
-            <a href='/'>
-            <img src="http://localhost:4500/images//nav_logo.png"></img>
-            </a>
-        </div>
-        <div className='split'>
-            <a>
-                <h4 id='white'>Become a Host</h4>
-            </a>
-            <a>
-                <h4>ZMS</h4>
-            </a>
-            <a>
-                <h4>Login/Signup</h4>
-            </a>
-            
-        </div>
+            <Link to='#' className='menu-bars'>
+              <FaIcons.FaBars onClick={showSidebar} />
+            </Link>
+          <div id='logo'>
+              <a href='/'>
+              <img src="http://localhost:3001/images//nav_logo.png"></img>
+              </a>
+          </div>
+          <div className='split'>
+              <a href='./host/host.html'>
+                  <h4 id='white'>Become a Host</h4>
+              </a>
+              <a href='./ZMS/ZMS.html'>
+                  <h4>ZMS</h4>
+              </a>
+              <a href='./Login.js'>
+                  <h4>Login/Signup</h4>
+              </a>
+              
+          </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>

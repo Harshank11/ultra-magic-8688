@@ -21,10 +21,6 @@ export default function Navbar() {
         <h1>Explore</h1>
         <h1>Products</h1>
         <button>Logout</button>
- 
-    
- 
-
     </div>
     
     </div>

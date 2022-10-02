@@ -12,15 +12,16 @@
 </head>
 
 <body>
-    <div class="container-cal">
+    <div class="CC">
         <div class="chooseTime ">
 
             <h2> <i class="fas fa-arrow-left  subtext"> </i> <span class="time-text">Choose Trip Start Time</span>  </h2>
 
         </div>
-        <div class="showDate" id="showDate">
+        <div class="A" id="A">
             <div id="leftBoxcal">
-                Start Date and Time
+                <h4>Start Date and Time</h4>
+                
                 <div class="lbd"></div>
                 <div class="lbd-time"></div>
             </div>
@@ -28,22 +29,22 @@
                 <h3> <i class="fas fa-arrow-right "> </i> </h3>
             </div>
             <div id="rightBoxcal">
-                End Date and Time
+                <h4>End Date and Time</h4>
                 <div class="rbd"></div>
                 <div class="rbd-time"></div>
             </div>
 
         </div>
-        <div class="calenderContainer">
+        <div class="C">
 
 
             <div class="showCalender">
-                <input type="date" oninput="startDate()" id="calendertemp" name="trip-start" value="2021-11-10"
-                    min="2021-11-10" max="2025-12-31">
+                <input type="date" oninput="startDate()" id="calendertemp" name="trip-start" value="2022-12-11"
+                    min="2022-12-11" max="2025-12-31">
             </div>
 
             <div class="showCalender">
-                <input type="date" oninput="endDate()" id="calendertemp2" name="trip-start" value="2021-11-10" min="2021-11-10"
+                <input type="date" oninput="endDate()" id="calendertemp2" name="trip-start" value="2022-12-11" min="2022-12-11"
                     max="2025-12-31">
             </div>
 
@@ -161,7 +162,7 @@
 
         localStorage.setItem("end_Date",JSON.stringify(end));
 
-        window.location.href = "https://zoomcar-backend.herokuapp.com/";
+        window.location.href = "/";
 
 
     }

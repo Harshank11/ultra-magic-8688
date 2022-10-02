@@ -3,19 +3,22 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import Reports from './Pages/Reports.js';
-import Products from './Pages/Products';
+import Reports from './Pages/Reports'
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
 
 function App() {
   return (
     <>
     <Router>
       <Navbar />
-      <Home/>
+      {/* <Home/> */}
+      {/* <Reports/> */}
       <Routes>
-        <Route path='/' exact component={Home} />
+        <Route path='/' element={<Home/>} />
         <Route path='/reports' component={Reports} />
-        <Route path='/products' component={Products} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/tryitfree' element={<Signup/>} />
       </Routes>
     </Router>
   </>
