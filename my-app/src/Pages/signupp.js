@@ -88,7 +88,7 @@ function Click(sign){
      };
      if(flag==1){
         alert("login successfully")
-         window.location.href="http://localhost:3002/"
+         window.location.href="http://localhost:3001/"
          //home page
      }
      else {
