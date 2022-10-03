@@ -3,11 +3,11 @@
   margin: 0px;
   padding: 0px;
 }
-.bottom-border-green {
+.harabhara {
   height: 16px;
   background-color: #10a310;
 }
-.main-section {
+.AA {
   background: url(https://www.zoomcar.com/assets/component-images/ZMS-Hero-Banner.584135fee08ac6c84fee329d5fb915f4.jpg);
   height: 98 vh;
   display: flex;
@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: 50% 75%;
 }
-.mobility-service-header {
+.zmstop {
   display: flex;
   justify-content: space-around;
   padding: 10px 0px;
@@ -29,11 +29,11 @@
 a{
   text-decoration: none;
 }
-.mobility-service-header > img {
+.zmstop > img {
   align-self: center;
   height: 24px;
 }
-.mobility-service-header > .demo-cta {
+.zmstop > .demo-cta {
   padding: 10px 17px 10px 18px;
   border-radius: 4px;
   border: 1px solid #e0e0e0;
@@ -49,11 +49,11 @@ a{
   outline: none;
   cursor: pointer;
 }
-.section-data {
+.sd {
   max-width: 500px;
   margin: 152.75px;
 }
-.main-heading {
+.mainhead {
   font-size: 36px;
   font-weight: 600;
   font-stretch: normal;
@@ -63,7 +63,7 @@ a{
   text-align: center;
   color: #fff;
 }
-.main-sub-heading {
+.msh {
   font-size: 16px;
   font-weight: 400;
   font-stretch: normal;
@@ -431,12 +431,12 @@ textarea {
   color: white;
 }
 /* Banner */
-.dashboard-banner {
+.dash {
   /* position: relative; */
   top: -50vh;
   max-width: 960px;
   margin: 40 auto 140 auto;
 }
-.dashboard-banner > img {
+.dash > img {
   max-width: 940px;
 }

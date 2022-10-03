@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import  {useNavigate} from "react-router-dom"
 import Sign from "react"
 
 function Signup(props) {
+   let navigate = useNavigate();
     const [formData, setFormData] = useState({
       email: "", // required
       password: "", // required
@@ -17,7 +19,7 @@ function Signup(props) {
         body: JSON.stringify(formData),
       })
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then((data) => navigate("/login"));
     }
   
     function handleChange(e) {

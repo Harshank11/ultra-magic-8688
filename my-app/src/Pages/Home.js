@@ -1,9 +1,6 @@
 import React from 'react';
 import "./style.css";
 
-import { showPopup } from './script';
-// import "./home.css"
-
 
 function Home() {
   return (

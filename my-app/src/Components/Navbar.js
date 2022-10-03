@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './Sidebar';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-// import Login from '../Pages/Login';
+import {Navlink} from "react-router-dom"
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -31,8 +31,8 @@ function Navbar() {
               <a href='./ZMS/ZMS.html'>
                   <h4>ZMS</h4>
               </a>
-              <a href='./Login.js'>
-                  <h4>Login/Signup</h4>
+              <a href='./Pages/signup.html'>
+                  <h4>Harshank Patel</h4>
               </a>
               
           </div>
